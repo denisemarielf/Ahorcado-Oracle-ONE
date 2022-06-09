@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.word-container {
+  display: flex;
+  justify-content: center;
+}
+
+.letter-box {
+  margin: 20px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid #95d6a4;
+  font-size: 50px;
+  cursor: default;
+  user-select: none;
+}
+
+.invisible {
+  display: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  background-color: #95d6a4;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+footer {
+  color: grey;
+  border-top: 1px solid #95d6a4;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: smaller;
+  padding: 5px;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.game-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+}
+
+.hangman-img {
+  max-height: 250px;
+}
+
+.wrong-letters-container,
+.message-container,
+#game-control-buttons {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#game-control-buttons > button,
+.start-game-container > button,
+form > button {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.primary-button {
+  background-color: darkorange;
+  border: 1px solid transparent;
+}
+
+.secondary-button {
+  border: 1px solid darkorange;
+  background-color: transparent;
+}
+
+.start-game-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.message-container {
+  padding-bottom: 20px;
+  font-size: xx-large;
+}
+
+.word-container {
+  width: 100%;
+}
+
+.new-word-container {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form > input {
+  height: 40px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid darkorange;
+  padding: 5px;
+}
+
+form > input:focus {
+  outline: none;
+  border: 1px solid darkorange;
+}
+
+button {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
