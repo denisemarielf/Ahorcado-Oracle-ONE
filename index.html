@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Ahorcado</title>
+  </head>
+  <body>
+    <header>JUEGO DEL AHORCADO</header>
+
+    <main>
+      <section class="new-word-container">
+        <form>
+          <label for="text"> Nueva palabra: </label>
+          <input type="text" maxlength="6" minlength="3" />
+          <small>Entre 3 y 6 caracteres</small>
+          <button id="button-add-new-word" class="primary-button">
+            Agregar a la lista de palabras
+          </button>
+          <button id="button-game-new-word" class="primary-button">
+            Iniciar juego con palabra ingresada
+          </button>
+          <button id="button-return" class="secondary-button">Volver</button>
+        </form>
+      </section>
+      <section class="start-game-container">
+        <img
+          class="hangman-img"
+          src="./images/hangman-game.png"
+          alt="hangman-figure"
+        />
+        <button id="button-start" class="primary-button">Iniciar Juego</button>
+        <button id="addNewWord" class="secondary-button">
+          Agregar nueva palabra
+        </button>
+      </section>
+      <section class="game-container">
+        <div class="hangman-container">
+          <img
+            id="hangman-game-img"
+            class="hangman-img"
+            src=""
+            alt="hangman-figure"
+          />
+        </div>
+        <div class="word-container"></div>
+        <div class="wrong-letters-container">
+          <p class="wrong-letters"></p>
+        </div>
+        <div class="message-container"></div>
+        <div id="game-control-buttons">
+          <button id="button-new-game" class="primary-button">
+            Nuevo Juego
+          </button>
+          <button id="button-quit" class="secondary-button">Desistir</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <p>Copyright © 2022 Denise Fernandez</p>
+        <a href="https://github.com/denisemarielf" target="blank">
+            <img src="./images/GitHub-Mark/PNG/GitHub-Mark-32px.png" alt="">
+        </a>
+    </footer>
+  </body>
+</html>
